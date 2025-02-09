@@ -1,0 +1,3 @@
+# Type Inference Issue in Generic Function Combining Arrays of Different Types
+This repository demonstrates a type inference issue in TypeScript when using a generic function to combine arrays of different types.  The function `combineArrays` aims to combine two arrays of the same type, however, if arrays of different types are passed the inferred type is a union. This can lead to unexpected type errors if you attempt to use the resulting array in a context where a specific type is expected.
+The `bug.ts` file shows the problem in action, while `bugSolution.ts` offers a solution using type guards to specify the type at runtime.
